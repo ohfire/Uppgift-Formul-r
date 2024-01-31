@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enkelt Formulär</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <form action="tack-sida.html" method="post">
+        <label for="namn">Namn:</label>
+        <input type="text" id="namn" name="namn" required>
+
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="meddelande">Meddelande:</label>
+        <textarea id="meddelande" name="meddelande" rows="4"></textarea>
+
+        <label for="kategori">Välj kategori:</label>
+        <select id="kategori" name="kategori">
+            <option value="fraga">Fråga</option>
+            <option value="kommentar">Kommentar</option>
+            <option value="forslag">Förslag</option>
+        </select>
+
+        <label>Preferenser:</label>
+        <input type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="Ja">
+        <label for="nyhetsbrev">Jag vill prenumerera på nyhetsbrev</label>
+
+        <label>Kön:</label>
+        <input type="radio" id="man" name="kon" value="man">
+        <label for="man">Man</label>
+        <input type="radio" id="kvinna" name="kon" value="kvinna">
+        <label for="kvinna">Kvinna</label>
+
+        <input type="submit" value="Skicka">
+    </form>
+
+</body>
+</html>
